@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body onload="DefaultScreen()">
+    <Div id="container">
+        <center>
+            <h1>5 Days Weather Forecast</h1>
+            <input class="storage" type="text" id="cityInput"></input>
+            <button type="button" onclick="retrieveInfo()">Search</button>        
+            <h2 id="locationName"></h2>
+            <p id="actualDate"></p>
+        </center>
+    </Div>
+    
+    <div id = "weatherBox">
+        <div id="iconsbox">    
+            <div class = "icons">
+                <p class="weather1" id="day1"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p id="temp1"></p>
+                <p id="hum1"></p>
+                <p id="speed1"></p>
+            </div>
+            <div class = "icons">
+                <p class="weather2" id="day2"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p id="temp2"></p>
+                <p id="hum2"></p>
+                <p id="speed2"></p>
+            </div>
+            <div class = "icons">
+                <p class="weather3" id="day3"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p id="temp3"></p>
+                <p id="hum3"></p>
+                <p id="speed3"></p>
+            </div>
+            <div class = "icons">
+                <p class="weather4" id="day4"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p id="temp4"></p>
+                <p id="hum4"></p>
+                <p id="speed4"></p>
+            </div>
+            <div class = "icons">
+                <p class="weather5" id="day5"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p id="temp5"></p>
+                <p id="hum5"></p>
+                <p id="speed5"></p>
+            </div>
+        </div>
+    </div>
+
+
+ <script src="assets/script.js"></script>
+</body>
+</html>
