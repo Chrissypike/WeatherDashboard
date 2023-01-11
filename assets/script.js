@@ -7,6 +7,7 @@ function retrieveInfo() {
 fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=ab5eb8d68c87e60b901dcbdd753d4447')
 .then(response => response.json())
 .then(data => {
+    //Retrieving and displaying the current date, temperature, humidity, and wind speed from the api
     for (i=0; i<5; i++) {
         document.getElementById("actualDate").innerHTML = Date(data.list[i].dt_txt);
     }
@@ -20,7 +21,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
         document.getElementById("speed" + (i+1)).innerHTML = "Wind speed:" + Number(data.list[i].wind.speed);
     }
    
-    //Getting Weather Icons
+    //Retrieving the Weather Icons
      for(i = 0; i<5; i++){
         document.getElementById("img" + (i+1)).src = "http://openweathermap.org/img/wn/"+
         data.list[i].weather[0].icon
@@ -39,7 +40,7 @@ function DefaultScreen(){
 }
 
 
-//Getting and displaying the text for the upcoming five days of the week
+//Getting and displaying the text for the next five days of the week
 var d = new Date();
 var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
 
