@@ -7,4 +7,4 @@ for that city and it saved to the search histoy
 - The city name, date, an icon represenation and of the weather conditions, the temperature, the humidity, and
 the wind speed is shown
 - There is future weather forecasts for the next 4 days displayed with the previous requirements
-When I click the a city from the previous search history, then all the information is shown
+- When I click the a city from the previous search history, then all the information is shown
